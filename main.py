@@ -1,8 +1,7 @@
 finalnumbers=[0]
 actualvalue=0
 output="0,"
-totalintegers= int(input("Times the number increases"))
-
+totalintegers= int(input("Times the number increases:"))
 def on_forever():
     global actualvalue
     actualvalue+=1
@@ -10,5 +9,4 @@ def on_forever():
 for i in range(totalintegers):
     on_forever()
     output=str(output)+str(finalnumbers[actualvalue])
-
 print(output)
